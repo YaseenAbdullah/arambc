@@ -13,18 +13,10 @@ class _WebViewPageState extends State<WebViewPage> {
   @override
   Widget build(BuildContext context) {
     return WebviewScaffold(
-
-      url: 'https://www.google.com${widget.id}',
+      url: 'https://www.google.com/${widget.id}',
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: Text('Scanner Page'),
-        actions: <Widget>[
-          RaisedButton(onPressed: (){
-            print('https://www.google.com/${widget.id}');
-          },
-          child: Text('Print'),
-          ),
-        ],
+        title: Text('https://www.google.com/${widget.id}'),
       ),
     );
   }
