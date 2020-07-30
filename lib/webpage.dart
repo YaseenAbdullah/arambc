@@ -16,7 +16,7 @@ class _WebViewPageState extends State<WebViewPage> {
       url: 'https://www.google.com/${widget.id}',
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: Text('https://www.google.com/${widget.id}'),
+        title: Text('the url is: https://www.google.com/${widget.id}',style: TextStyle(fontSize: 9),),
       ),
     );
   }
